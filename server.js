@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('axxx'));
 
 app.post('/fileupload',fileupload.single('avatar'),(req,res) =>{
-    return res.json({status: 'OK'});
+    return res.json('Upload file sussetfully');
 })
 
 app.listen(3001);
